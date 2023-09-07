@@ -1,7 +1,17 @@
 #!/bin/bash
 
+echo "Estamos listos ara subir su proyecto a Github, pero antes..."
+echo "Introdusca su usuario de Github"
+read user
+echo "Nombre del proyecto"
+read project
 echo "Mensaje para confirmar"
 read mnsg
-git add
+
+clear
+
+git init
+git add .
 git commit -m $mnsg
+git remote add origin https://github.com/$user/$project.git
 git push origin main
