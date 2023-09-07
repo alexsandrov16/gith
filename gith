@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Mensaje para confirmar"
+read mnsg
+git add
+git commit -m $mnsg
+git push origin main
